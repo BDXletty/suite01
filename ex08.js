@@ -31,3 +31,21 @@ isAllEven([4, 4, 6, 8, 10, 12]);
 
 //  écrire votre code sous ce commentaire
 
+function isEven(nb) {
+    if (nb % 2 === 0) {
+        return 1;
+    }
+    else {
+        return 0;
+    }
+}
+function isAllEven(tabNombre) {
+    for (i = 0; i < tabNombre.length; i++) {
+        if (isEven(tabNombre[i]) === 0) { // si la fonction isEven retourne 0
+            return 0;
+        }
+    }
+    return 1;
+}
+console.log(isAllEven([4, 5, 6]));
+console.log(isAllEven([4, 4, 6, 8, 10, 12]));
