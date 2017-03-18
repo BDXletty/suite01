@@ -22,3 +22,14 @@ boostedEvenAddition([4, 5, 6]);
 boostedEvenAddition([1, 3, 4, 5, 4, 6, 9, 8, 11, 10, 11, 12]);
 
 //  écrire votre code sous ce commentaire
+function boostedEvenAddition(tabNombre) {
+    let sum = 0;
+    for (i = 0; i < tabNombre.length; i++) {
+        if (tabNombre[i] % 2 === 0) {
+            sum = sum + tabNombre[i];
+        }
+    }
+    return sum;
+}
+console.log(boostedEvenAddition([4, 5, 6]));
+console.log(boostedEvenAddition([1, 3, 4, 5, 4, 6, 9, 8, 11, 10, 11, 12]));
